@@ -1,9 +1,24 @@
 {
   "name": "node-loader-sample",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:tkfmst/node-loader-sample.git",
+  "main": "./js/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "inline": "html-inline"
+  },
+  "repository": "git@my.github.com:tkfmst/node-loader-sample.git",
   "author": "takafumi-s <takafumi.s.dev@gmail.com>",
   "license": "MIT",
-  "private": false
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "html-inline": "^1.2.0",
+    "html-inline-css-webpack-plugin": "^1.8.0",
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
